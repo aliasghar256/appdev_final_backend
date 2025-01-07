@@ -14,7 +14,7 @@ mainRouter.use('/user', userRouter)
 mainRouter.use('/actordinance', actOrdinanceRouter)
 //mainRouter.use('/elasticsearch', elasticSearchRouter)
 //Middleware Added for all the routes after /judgment
-// mainRouter.use(authenticateToken)
+mainRouter.use(authenticateToken)
 mainRouter.use('/judgment', judgmentRouter)
 mainRouter.use('/notifications', notificationsRouter)
 mainRouter.use('/favorites', favoritesRouter)
