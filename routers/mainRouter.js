@@ -7,6 +7,7 @@ const searchLogRouter = require('./searchLogRouter')
 const actOrdinanceRouter = require('./actOrdinanceRouter')
 const userNoteRouter = require('./userNoteRouter')
 const notificationsRouter = require('./notificationsRouter')
+const templatesRouter = require('./templatesRouter')
 const mainRouter = express.Router()
 
 mainRouter.use('/user', userRouter)
@@ -19,6 +20,8 @@ mainRouter.use('/notifications', notificationsRouter)
 mainRouter.use('/favorites', favoritesRouter)
 mainRouter.use('/searchlog', searchLogRouter)
 mainRouter.use('/usernote',userNoteRouter)
+mainRouter.use('/templates', templatesRouter)
+
 //mainRouter.post('/authtoken', (req, res) => res.send('Token Verified'))
 
 module.exports = mainRouter
